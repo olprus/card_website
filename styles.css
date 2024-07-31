@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #0d3b1f;
-    color: #ffffff;
+    background-color: #f0f0f0;
+    color: #333;
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,49 +11,104 @@ body {
 }
 
 .container {
+    width: 100%;
+    max-width: 800px;
     text-align: center;
-    max-width: 600px;
     padding: 20px;
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    background-color: #184d32;
 }
 
 .photo img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #ffffff;
     margin-bottom: 20px;
 }
 
-h1, h2 {
-    margin: 10px 0;
+h1 {
+    margin: 20px 0;
+    font-size: 2em;
 }
 
-.contacts a, .resume a, .portfolio-item, .back-link a {
-    display: block;
-    color: #00ff99;
+.contacts a, .resume a {
+    display: inline-block;
+    color: #333;
     text-decoration: none;
-    margin: 10px 0;
-    padding: 10px;
-    border: 2px solid #00ff99;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    border: 1px solid #333;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.contacts a:hover, .resume a:hover, .portfolio-item:hover, .back-link a:hover {
-    background-color: #00ff99;
-    color: #0d3b1f;
+.contacts a:hover, .resume a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.portfolio {
+    margin-top: 40px;
+}
+
+.portfolio h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
 }
 
 .portfolio-items {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .portfolio-item {
     width: 100%;
-    margin: 5px 0;
+    max-width: 300px;
+    margin: 10px;
+    text-decoration: none;
+    color: inherit;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-description {
+    padding: 10px;
+}
+
+.portfolio-description h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.portfolio-description p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.back-link a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-link a:hover {
+    background-color: #333;
+    color: #fff;
 }
