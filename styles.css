@@ -78,6 +78,8 @@ h1 {
 .portfolio-item img {
     width: 100%;
     height: auto;
+    max-height: 200px; /* Встановлення максимальній висоті зображення */
+    object-fit: cover; /* Забезпечує збереження пропорцій зображення */
 }
 
 .portfolio-description {
